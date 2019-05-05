@@ -177,6 +177,7 @@ public class WebViewFragment extends Fragment implements ConnectionFactory.Updat
         mWebView.setWebChromeClient(new WebChromeClient());
         mWebView.getSettings().setDomStorageEnabled(true);
         mWebView.getSettings().setJavaScriptEnabled(true);
+        mWebView.getSettings().setSupportMultipleWindows(true);
         mWebView.loadUrl(url);
         mWebView.setBackgroundColor(Color.TRANSPARENT);
     }

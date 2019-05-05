@@ -1069,6 +1069,8 @@ public class WidgetAdapter extends RecyclerView.Adapter<WidgetAdapter.ViewHolder
                     mConnection.getUsername(), mConnection.getPassword()));
             mWebView.getSettings().setDomStorageEnabled(true);
             mWebView.getSettings().setJavaScriptEnabled(true);
+            mWebView.getSettings().setSupportMultipleWindows(true);
+            mWebView.setBackgroundColor(Color.TRANSPARENT);
             mWebView.loadUrl(url);
         }
     }
